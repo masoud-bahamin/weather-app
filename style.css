@@ -1,0 +1,56 @@
+body {
+	background-color: grey;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	height: 100vh;
+	font-family:  sans-serif;
+}
+
+p{
+	margin: 0;
+}
+
+#modal-container {
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.modal-close {
+	position: absolute;
+	bottom: -290px;
+	width: 100%;
+	transition: all .5s;
+}
+.modal-open {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	background-color: rgb(100, 99, 99);
+	transition: all .5s;
+}
+
+
+.header-img {
+	width: 17px;
+	height: 17px;
+	padding-right: 5px;
+}
+
+.main-image {
+	width: 200px;
+}
+
+.thumb-image {
+	width: 40px;
+}
+
+.day-image {
+	width: 70px;
+}
+
+.hour-div {
+	font-size: 14px;
+}
