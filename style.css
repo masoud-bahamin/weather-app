@@ -8,6 +8,10 @@ body {
 	font-family:  sans-serif;
 }
 
+#app-container{
+	max-width:420px
+}
+
 p{
 	margin: 0;
 }
