@@ -8,131 +8,130 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
-    
+
   <link rel="stylesheet" href="./style.css">
   <title>Weather app</title>
 </head>
 
 <body>
-  <div class="text-center">
+  <div class="text-center" id="app-container">
     <div>
-      <header class="d-flex align-items-center p-4">
+      <header class="d-flex align-items-center p-4 header-container">
         <p id="clock">01:43</p>
         <i class="fa-solid fa-wifi ms-auto"></i>
         <i class="fa-solid fa-signal mx-2"></i>
         <i class="fa-solid fa-battery-three-quarters"></i>
       </header>
+      <div class="row " style= " overflow: hidden ;">
+        <div class="col-sm-6 col-xs-12">
+          <h1 id="location">My Location</h1>
+          <p>Today, <span id="date">7 Sep</span></p>
+          <div id="weather">
 
-      <div>
-        <h1 id="location">My Location</h1>
-        <p>Today, <span id="date">7 Sep</span></p>
-        <div id="weather">
-
-          <img src="./image/sun.png" class="main-img" />
-        </div>
-        <p id="weather-name"></p>
-        <div class="text-center">
-          <span class="mb-4 fs-2" id="temp">15</span>
-        </div>
-
-        <div class="d-flex overflow-x-scroll shadow p-3 my-3 hour-div">
-          <div>
-            <p class="px-3"><br>Now</p>
-            <img src="./image/sun-rain.png" class="thumb-image" />
-            <div><span>12</span><span>&#8451;</span></div>
+            <img src="./image/sun.png" class="main-img" />
           </div>
-          <div>
-            <p class="px-3">7:00 AM</p>
-            <img src="./image/sun-rain.png" class="thumb-image" />
-            <p>14<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">8:00 AM</p>
-            <img src="./image/sun.png" class="thumb-image" />
-            <p>13<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">9:00 AM</p>
-            <img src="./image/sun.png" class="thumb-image" />
-            <p>12<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">10:00 AM</p>
-            <img src="./image/sun-rain.png" class="thumb-image" />
-            <p>11<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">11:00 AM</p>
-            <img src="./image/sun-rain.png" class="thumb-image" />
-            <p>14<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">12:00 AM</p>
-            <img src="./image/sun.png" class="thumb-image" />
-            <p>15<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">13:00 AM</p>
-            <img src="./image/sun.png" class="thumb-image" />
-            <p>16<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">14:00 AM</p>
-            <img src="./image/sun-rain.png" class="thumb-image" />
-            <p>11<span>&#8451;</span></p>
-          </div>
-          <div>
-            <p class="px-3">10:00 AM</p>
-            <img src="./image/sun-rain.png" class="thumb-image" />
-            <p>11<span>&#8451;</span></p>
+          <p id="weather-name"></p>
+          <div class="text-center">
+            <span class="mb-4 fs-2" id="temp">15</span>
           </div>
         </div>
-
+        <div class="col-sm-6 col-xs-12">
+          <div class="d-flex overflow-x-scroll shadow p-3 my-3 hour-div">
+            <div>
+              <p class="px-3"><br>Now</p>
+              <img src="./image/sun-rain.png" class="thumb-image" />
+              <div><span>12</span><span>&#8451;</span></div>
+            </div>
+            <div class="pointer">
+              <p class="px-3">7:00 AM</p>
+              <img src="./image/sun-rain.png" class="thumb-image" />
+              <p>14<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">8:00 AM</p>
+              <img src="./image/sun.png" class="thumb-image" />
+              <p>13<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">9:00 AM</p>
+              <img src="./image/sun.png" class="thumb-image" />
+              <p>12<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">10:00 AM</p>
+              <img src="./image/sun-rain.png" class="thumb-image" />
+              <p>11<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">11:00 AM</p>
+              <img src="./image/sun-rain.png" class="thumb-image" />
+              <p>14<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">12:00 AM</p>
+              <img src="./image/sun.png" class="thumb-image" />
+              <p>15<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">13:00 AM</p>
+              <img src="./image/sun.png" class="thumb-image" />
+              <p>16<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">14:00 AM</p>
+              <img src="./image/sun-rain.png" class="thumb-image" />
+              <p>11<span>&#8451;</span></p>
+            </div>
+            <div class="pointer">
+              <p class="px-3">10:00 AM</p>
+              <img src="./image/sun-rain.png" class="thumb-image" />
+              <p>11<span>&#8451;</span></p>
+            </div>
+          </div>
+        
         <p class="text-start px-3 mt-4">10 days forcast</p>
 
-        <div class="d-flex shadow p-3 overflow-x-scroll">
-          <div class="px-3">
+        <div class="d-flex shadow p-3 div-scroll overflow-x-scroll">
+          <div class="px-3 pointer">
             <p>8 Sep</p>
             <img src="./image/rain.png" class="day-image" />
             <p>11<span>&#8451;</span></p>
           </div>
-          <div class="px-3">
+          <div class="px-3 pointer">
             <p>9 Sep</p>
             <img src="./image/sun-rain.png" class="day-image" />
             <p>18<span>&#8451;</span></p>
           </div>
-          <div class="px-3">
+          <div class="px-3 pointer">
             <p>10 Sep</p>
             <img src="./image/sun.png" class="day-image" />
             <p>14<span>&#8451;</span></p>
           </div>
-          <div class="px-3">
+          <div class="px-3 pointer">
             <p>11 Sep</p>
             <img src="./image/sun.png" class="day-image" />
             <p>18<span>&#8451;</span></p>
           </div>
-          <div class="px-3">
+          <div class="px-3 pointer">
             <p>12 Sep</p>
             <img src="./image/sun-rain.png" class="day-image" />
             <p>12<span>&#8451;</span></p>
           </div>
-          <div class="px-3">
+          <div class="px-3 pointer">
             <p>13 Sep</p>
             <img src="./image/sun.png" class="day-image" />
             <p>15<span>&#8451;</span></p>
           </div>
-          <div class="px-3">
+          <div class="px-3 pointer">
             <p>14 Sep</p>
             <img src="./image/sun-rain.png" class="day-image" />
             <p>17<span>&#8451;</span></p>
           </div>
         </div>
-
-
-
+      </div>
         <div id="modal-container">
           <div class="modal-close p-3 " id="modal">
-            <button id="btn" class="btn mb-4">-</button>
+            <button id="btn" class="btn mb-5 mt-2 border " style="padding: 2px 40px;"></button>
             <div class="d-flex mb-2">
               <label class="form-check-label" for="flexSwitchCheckDefault">Fahrenheit</label>
               <div class="form-check form-switch ms-auto">
