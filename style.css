@@ -13,6 +13,10 @@ body {
 }
 
 #app-container{
+	max-width:420px
+}
+
+#app-container{
 	max-width: 840px;
 	background-color: grey;
 	overflow: hidden;
@@ -112,6 +116,7 @@ p{
 .hour-div {
 	font-size: 14px;
 }
+
 .pointer{
 	cursor: pointer;
 }
