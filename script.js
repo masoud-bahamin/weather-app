@@ -10,6 +10,7 @@ let feelsLike = document.getElementById("feels-like");
 let sunrise = document.getElementById("sunrise");
 let sunset = document.getElementById("sunset");
 let switchbtn = document.getElementById("switch");
+let themebtn = document.getElementById("theme");
 const modal = document.getElementById("modal");
 const btn = document.getElementById("btn");
 let date = document.getElementById("date");
@@ -19,6 +20,19 @@ let city = "Istanbul";
 let weatherImage = "";
 
 window.addEventListener('load', getApi);
+
+themebtn.addEventListener('click', () => {
+    console.log("root");
+    if (themebtn.checked) {
+        document.documentElement.style.setProperty("--main-bg" , "rgb(54, 54, 54)")
+        document.documentElement.style.setProperty("--main-color" , "white")
+        document.documentElement.style.setProperty("--bg2" , "rgb(60, 60, 60)")
+    } else {
+        document.documentElement.style.setProperty("--main-bg" , "rgb(236, 235, 235)")
+        document.documentElement.style.setProperty("--main-color" , "rgb(42, 42, 42)")
+        document.documentElement.style.setProperty("--bg2" , "rgb(210, 210, 209)")
+    }
+})
 
 function getApi() {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bacb2bf4191872da42c94afbc7b155a5`)
