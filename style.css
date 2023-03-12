@@ -41,7 +41,7 @@ body {
 
 .modal-close {
 	/* position: absolute; */
-	bottom: -290px;
+	bottom: -310px;
 	width: 100%;
 	transition: all .5s;
 }
@@ -131,6 +131,6 @@ p{
 
 .pointer:hover{
 	scale: 1.1;
-	box-shadow: 0px 0px 3px 5px rgb(124, 124, 124);
-	color: rgb(228, 228, 228);
+	box-shadow: 0px 0px 3px 5px var(--bg2);
+	color: var(--main-color);
 }
